@@ -27,5 +27,8 @@ sudo nano /etc/postfix/virtual
 sudo nano /etc/postfix/main.cf
 sudo postmap /etc/postfix/virtual
 
+#PostfixAdmin
+wget https://sourceforge.net/projects/postfixadmin/files/postfixadmin/postfixadmin-3.0/postfixadmin-3.0.tar.gz/download
+
 # git
 sudo apt-get install git
