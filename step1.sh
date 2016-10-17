@@ -4,6 +4,7 @@
 
 #Apache2
 sudo apt-get install apache2 libapache2-mod-php7.0
+
 #Fornecer permissão /www
 sudo chown -R www-data:www-data /var/www
 sudo chmod -R g+rw /var/www
@@ -19,3 +20,9 @@ apt-get install postgresql-9.5 postgresql-contrib-9.5 postgis-2.2
 
 #WordPress
 sudo apt-get install postgresql postgresql-contrib
+
+#Postfix
+sudo DEBIAN_PRIORITY=low apt-get install postfix
+sudo nano /etc/postfix/virtual
+sudo nano /etc/postfix/main.cf
+sudo postmap /etc/postfix/virtual
