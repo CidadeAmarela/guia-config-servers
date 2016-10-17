@@ -1,0 +1,7 @@
+--- VERSOES ---
+psql (PostgreSQL) 9.5.4
+PHP 7.0.8-0ubuntu0.16.04.3 (cli) ( NTS )
+Copyright (c) 1997-2016 The PHP Group
+Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
+    with Zend OPcache v7.0.8-0ubuntu0.16.04.3, Copyright (c) 1999-2016, by Zend Technologies
+git version 2.7.4
