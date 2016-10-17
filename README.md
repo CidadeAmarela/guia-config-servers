@@ -22,5 +22,13 @@ Para ajudar ou acompanhar demandas, usar [*issues*](https://github.com/CidadeAma
 
 -----
 
+# SCRIPTS E TESTES
+Os scripts resumem e facilitam o refazer do passo-a-passo descrito... e com `_check.sh` compare-se com o feito anteriormente.
+
+```
+sh step1.sh
+# se tudo ok...
+sh step1_check.sh | diff step1_check.dump -
+```
 
 ![[CC-BY-SA v3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR)](https://upload.wikimedia.org/wikipedia/commons/a/a9/CC-BY-SA.png)
