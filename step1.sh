@@ -26,3 +26,6 @@ sudo DEBIAN_PRIORITY=low apt-get install postfix
 sudo nano /etc/postfix/virtual
 sudo nano /etc/postfix/main.cf
 sudo postmap /etc/postfix/virtual
+
+# git
+sudo apt-get install git
