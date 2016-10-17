@@ -1,0 +1,2 @@
+psql --version 
+php --version
