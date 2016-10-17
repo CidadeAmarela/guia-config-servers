@@ -6,5 +6,4 @@ git --version
 
 echo '--- ETC ---'
 php --info | grep -v REQUEST_TIME
-php --ini
 
