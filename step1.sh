@@ -1,3 +1,10 @@
+## CIDADÃO BRASILEIRO!
+export LANGUAGE=pt_BR.UTF-8
+export LANG=pt_BR.UTF-8
+locale-gen pt_BR.UTF-8
+update-locale LANG=pt_BR
+dpkg-reconfigure locales
+export LC_ALL=pt_BR.UTF-8
 
 ## ... falta criar usuário e logar com usuário
 
