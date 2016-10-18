@@ -1,9 +1,8 @@
 echo '--- VERSOES ---'
 
-psql --version 
+psql --version
 php --version
 git --version
 
 echo '--- ETC ---'
 php --info | grep -v REQUEST_TIME
-
