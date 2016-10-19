@@ -18,14 +18,5 @@ apt-get install mysql-server libapache2-mod-auth-mysql
 #postgreSQL
 apt-get install postgresql-9.5 postgresql-contrib-9.5 postgis-2.2
 
-#WordPress
-sudo apt-get install postgresql postgresql-contrib
+echo '.. próximo passo PostFix'
 
-#Postfix
-DEBIAN_PRIORITY=low apt-get install postfix
-nano /etc/postfix/virtual
-nano /etc/postfix/main.cf
-postmap /etc/postfix/virtual
-
-#PostfixAdmin
-wget https://sourceforge.net/projects/postfixadmin/files/postfixadmin/postfixadmin-3.0/postfixadmin-3.0.tar.gz/download
