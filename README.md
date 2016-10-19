@@ -10,9 +10,9 @@ Para ajudar ou acompanhar demandas, usar [*issues*](https://github.com/CidadeAma
 
 # ESPECIFICAÇÕES #
 
-* [Requisitos gerais](https://github.com/CidadeAmarela/guia-config-servers/wiki/Requisitos-gerais)
+* [Requisitos gerais](SPEC1_requisitosGerais.md)
 
-* [Instalação e configuração](#)
+* [Instalação e configuração](SPEC2_instalConfig.md)
 
 * [Backups](#)
 
