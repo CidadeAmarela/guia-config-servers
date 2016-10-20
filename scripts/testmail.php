@@ -2,13 +2,13 @@
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
 
-    $opt = ['d'=>'', 'f'=>'', 'h'=>true];
-    $opt = array_merge( $opt, getopt("d:f:h") );
+    $opt = ['d'=>'', 't'=>'', 'h'=>true];
+    $opt = array_merge( $opt, getopt("d:t:h") );
 
     if (!$opt['h'])
-	die("\nAJUDA, options disponiveis:\n -f fromName (dft ppkrauss) -d domainName (dft yellow)\n");
+	die("\nAJUDA, options disponiveis:\n -t toName (dft ppkrauss) -d fromDomainName (dft yellow)\n");
     $from = 'test@'.( $opt['d']? $opt['d'] : 'yellowtown.org' );
-    $to   = $opt['f']? $opt['f']: 'ppkrauss@gmail.com';
+    $to   = $opt['t']? $opt['t']: 'ppkrauss@gmail.com';
 
     $subject = "ola mamae!";
     $message = "Este e o email da mamae.\n Nao pode cair na caixa de spam... \n Etc. e tal isso eh um email normal";
