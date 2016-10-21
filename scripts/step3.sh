@@ -10,7 +10,7 @@ chown -R www-data:www-data /var/www
 chmod -R g+rw /var/www
 
 #PHP7.0
-apt-get install php7.0 php7.0-mysql
+apt-get install php7.0 php7.0-mysql php7.0-mbstring php7.0-imap
 
 #MySQL
 apt-get install mysql-server libapache2-mod-auth-mysql
