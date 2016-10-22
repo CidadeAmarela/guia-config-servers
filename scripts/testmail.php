@@ -14,5 +14,5 @@
     $message = "Este e o email da mamae.\n Nao pode cair na caixa de spam... \n Etc. e tal isso eh um email normal";
     $headers = "From:" . $from;
     mail($to,$subject,$message, $headers);
-    echo "\nTest email from $from sent to $to!\n";
+    echo "\nTest email from $from (subj '$subject') sent to $to!\n";
 ?>
