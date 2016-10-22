@@ -2,6 +2,9 @@ if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
   exit
 fi
+
+apt-get update
+
 #Apache2
 apt-get install apache2 libapache2-mod-php7.0
 
