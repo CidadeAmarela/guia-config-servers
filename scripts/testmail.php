@@ -3,7 +3,7 @@
     error_reporting( E_ALL );
 
     $opt = ['d'=>'', 't'=>'', 'h'=>true, 's'=>''];
-    $opt = array_merge( $opt, getopt("d:t:h") );
+    $opt = array_merge( $opt, getopt("d:t:hs:") );
 
     if (!$opt['h'])
 	die("\nAJUDA, options disponiveis:\n\t -t toName (dft ppkrauss)\n\t-d fromDomainName (dft yellow)\n\t-s extra subject\n");
