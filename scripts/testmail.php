@@ -2,7 +2,7 @@
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
 
-    $opt = ['d'=>'', 't'=>'', 'h'=>true];
+    $opt = ['d'=>'', 't'=>'', 'h'=>true, 's'=>''];
     $opt = array_merge( $opt, getopt("d:t:h") );
 
     if (!$opt['h'])
