@@ -16,8 +16,7 @@ chmod -R g+rw /var/www
 apt-get install php7.0 php7.0-mysql php7.0-mbstring php7.0-imap
 
 #MySQL
-apt-get install mysql-server 
-apt-get install libapache2-mod-auth-mysql
+apt-get install mysql-server
 
 #postgreSQL
 apt-get install postgresql-9.5 postgresql-contrib-9.5 postgis-2.2
