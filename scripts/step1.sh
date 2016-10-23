@@ -8,7 +8,7 @@ echo '--- LOCALE do próprio shell inclusive ---'
 sudo apt-get install git
 
 export LANGUAGE=pt_BR.UTF-8
-export LANG=pt_BR.UTF-8
+export LANG=C.UTF-8  # só mensagens de erro em ingles
 locale-gen pt_BR.UTF-8
 update-locale LANG=pt_BR
 dpkg-reconfigure locales
