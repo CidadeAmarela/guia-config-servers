@@ -713,18 +713,18 @@ Environment
 Variable => Value
 LESSOPEN => | /usr/bin/lesspipe %s
 MAIL => /var/mail/root
-SSH_CLIENT => 201.6.229.220 21830 22
+SSH_CLIENT => 201.6.229.220 28504 22
 USER => root
 LC_TIME => pt_BR.UTF-8
 SHLVL => 1
 HOME => /root
-OLDPWD => /root
-SSH_TTY => /dev/pts/0
+OLDPWD => /tmp/sandbox
+SSH_TTY => /dev/pts/1
 LC_MONETARY => pt_BR.UTF-8
 LC_CTYPE => pt_BR.UTF-8
 LOGNAME => root
 _ => /bin/sh
-XDG_SESSION_ID => 12
+XDG_SESSION_ID => 2
 TERM => xterm-256color
 PATH => /root/bin:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 LC_ADDRESS => pt_BR.UTF-8
@@ -738,7 +738,7 @@ LESSCLOSE => /usr/bin/lesspipe %s %s
 LC_MEASUREMENT => pt_BR.UTF-8
 LC_IDENTIFICATION => pt_BR.UTF-8
 PWD => /tmp/sandbox/guia-config-servers
-SSH_CONNECTION => 201.6.229.220 21830 45.55.221.141 22
+SSH_CONNECTION => 201.6.229.220 28504 45.55.221.141 22
 LC_NUMERIC => pt_BR.UTF-8
 LC_PAPER => pt_BR.UTF-8
 
@@ -747,18 +747,18 @@ PHP Variables
 Variable => Value
 $_SERVER['LESSOPEN'] => | /usr/bin/lesspipe %s
 $_SERVER['MAIL'] => /var/mail/root
-$_SERVER['SSH_CLIENT'] => 201.6.229.220 21830 22
+$_SERVER['SSH_CLIENT'] => 201.6.229.220 28504 22
 $_SERVER['USER'] => root
 $_SERVER['LC_TIME'] => pt_BR.UTF-8
 $_SERVER['SHLVL'] => 1
 $_SERVER['HOME'] => /root
-$_SERVER['OLDPWD'] => /root
-$_SERVER['SSH_TTY'] => /dev/pts/0
+$_SERVER['OLDPWD'] => /tmp/sandbox
+$_SERVER['SSH_TTY'] => /dev/pts/1
 $_SERVER['LC_MONETARY'] => pt_BR.UTF-8
 $_SERVER['LC_CTYPE'] => pt_BR.UTF-8
 $_SERVER['LOGNAME'] => root
 $_SERVER['_'] => /bin/sh
-$_SERVER['XDG_SESSION_ID'] => 12
+$_SERVER['XDG_SESSION_ID'] => 2
 $_SERVER['TERM'] => xterm-256color
 $_SERVER['PATH'] => /root/bin:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 $_SERVER['LC_ADDRESS'] => pt_BR.UTF-8
@@ -772,7 +772,7 @@ $_SERVER['LESSCLOSE'] => /usr/bin/lesspipe %s %s
 $_SERVER['LC_MEASUREMENT'] => pt_BR.UTF-8
 $_SERVER['LC_IDENTIFICATION'] => pt_BR.UTF-8
 $_SERVER['PWD'] => /tmp/sandbox/guia-config-servers
-$_SERVER['SSH_CONNECTION'] => 201.6.229.220 21830 45.55.221.141 22
+$_SERVER['SSH_CONNECTION'] => 201.6.229.220 28504 45.55.221.141 22
 $_SERVER['LC_NUMERIC'] => pt_BR.UTF-8
 $_SERVER['LC_PAPER'] => pt_BR.UTF-8
 $_SERVER['PHP_SELF'] => 
@@ -797,3 +797,51 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 If you did not receive a copy of the PHP license, or have any
 questions about PHP licensing, please contact license@php.net.
+--- SERVICES ---
+● apache2.service - LSB: Apache2 web server
+   Loaded: loaded (/etc/init.d/apache2; bad; vendor preset: enabled)
+  Drop-In: /lib/systemd/system/apache2.service.d
+           └─apache2-systemd.conf
+   Active: active (running) since Dom 2016-10-23 18:05:33 UTC; 15min ago
+     Docs: man:systemd-sysv-generator(8)
+    Tasks: 7
+   Memory: 15.9M
+      CPU: 167ms
+   CGroup: /system.slice/apache2.service
+           ├─1712 /usr/sbin/apache2 -k start
+           ├─1715 /usr/sbin/apache2 -k start
+           ├─1716 /usr/sbin/apache2 -k start
+           ├─1717 /usr/sbin/apache2 -k start
+           ├─1718 /usr/sbin/apache2 -k start
+           ├─1719 /usr/sbin/apache2 -k start
+           └─3239 /usr/sbin/apache2 -k start
+
+Out 23 18:05:32 CidadeAmarela systemd[1]: Stopped LSB: Apache2 web server.
+Out 23 18:05:32 CidadeAmarela systemd[1]: Starting LSB: Apache2 web server...
+Out 23 18:05:32 CidadeAmarela apache2[1695]:  * Starting Apache httpd web server apache2
+Out 23 18:05:32 CidadeAmarela apache2[1695]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Out 23 18:05:33 CidadeAmarela apache2[1695]:  *
+Out 23 18:05:33 CidadeAmarela systemd[1]: Started LSB: Apache2 web server.
+● mysql.service - MySQL Community Server
+   Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+   Active: active (running) since Dom 2016-10-23 18:10:28 UTC; 10min ago
+ Main PID: 3132 (mysqld)
+    Tasks: 28
+   Memory: 143.9M
+      CPU: 667ms
+   CGroup: /system.slice/mysql.service
+           └─3132 /usr/sbin/mysqld
+
+Out 23 18:10:27 CidadeAmarela systemd[1]: Starting MySQL Community Server...
+Out 23 18:10:28 CidadeAmarela systemd[1]: Started MySQL Community Server.
+● postgresql.service - PostgreSQL RDBMS
+   Loaded: loaded (/lib/systemd/system/postgresql.service; enabled; vendor preset: enabled)
+   Active: active (exited) since Dom 2016-10-23 18:03:53 UTC; 17min ago
+ Main PID: 1308 (code=exited, status=0/SUCCESS)
+    Tasks: 0
+   Memory: 0B
+      CPU: 0
+   CGroup: /system.slice/postgresql.service
+
+Out 23 18:03:53 CidadeAmarela systemd[1]: Starting PostgreSQL RDBMS...
+Out 23 18:03:53 CidadeAmarela systemd[1]: Started PostgreSQL RDBMS.
