@@ -9,7 +9,7 @@ git version 2.7.4
 phpinfo()
 PHP Version => 7.0.8-0ubuntu0.16.04.3
 
-System => Linux CidadeAmarela 4.4.0-45-generic #66-Ubuntu SMP Wed Oct 19 14:12:37 UTC 2016 x86_64
+System => Linux yellowtown.org 4.4.0-45-generic #66-Ubuntu SMP Wed Oct 19 14:12:37 UTC 2016 x86_64
 Server API => Command Line Interface
 Virtual Directory Support => disabled
 Configuration File (php.ini) Path => /etc/php/7.0/cli
@@ -712,19 +712,19 @@ Environment
 
 Variable => Value
 LESSOPEN => | /usr/bin/lesspipe %s
-MAIL => /var/mail/root
-SSH_CLIENT => 201.6.229.220 36068 22
+MAIL => /root/Maildir
+SSH_CLIENT => 177.141.24.19 43102 22
 USER => root
 LC_TIME => pt_BR.UTF-8
 SHLVL => 1
 HOME => /root
-OLDPWD => /tmp/sandbox
-SSH_TTY => /dev/pts/0
+OLDPWD => /root
+SSH_TTY => /dev/pts/3
 LC_MONETARY => pt_BR.UTF-8
 LC_CTYPE => pt_BR.UTF-8
 LOGNAME => root
 _ => /bin/sh
-XDG_SESSION_ID => 127
+XDG_SESSION_ID => 28
 TERM => xterm-256color
 PATH => /root/bin:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 LC_ADDRESS => pt_BR.UTF-8
@@ -738,7 +738,7 @@ LESSCLOSE => /usr/bin/lesspipe %s %s
 LC_MEASUREMENT => pt_BR.UTF-8
 LC_IDENTIFICATION => pt_BR.UTF-8
 PWD => /tmp/sandbox/guia-config-servers
-SSH_CONNECTION => 201.6.229.220 36068 45.55.221.141 22
+SSH_CONNECTION => 177.141.24.19 43102 45.55.221.141 22
 LC_NUMERIC => pt_BR.UTF-8
 LC_PAPER => pt_BR.UTF-8
 
@@ -746,19 +746,19 @@ PHP Variables
 
 Variable => Value
 $_SERVER['LESSOPEN'] => | /usr/bin/lesspipe %s
-$_SERVER['MAIL'] => /var/mail/root
-$_SERVER['SSH_CLIENT'] => 201.6.229.220 36068 22
+$_SERVER['MAIL'] => /root/Maildir
+$_SERVER['SSH_CLIENT'] => 177.141.24.19 43102 22
 $_SERVER['USER'] => root
 $_SERVER['LC_TIME'] => pt_BR.UTF-8
 $_SERVER['SHLVL'] => 1
 $_SERVER['HOME'] => /root
-$_SERVER['OLDPWD'] => /tmp/sandbox
-$_SERVER['SSH_TTY'] => /dev/pts/0
+$_SERVER['OLDPWD'] => /root
+$_SERVER['SSH_TTY'] => /dev/pts/3
 $_SERVER['LC_MONETARY'] => pt_BR.UTF-8
 $_SERVER['LC_CTYPE'] => pt_BR.UTF-8
 $_SERVER['LOGNAME'] => root
 $_SERVER['_'] => /bin/sh
-$_SERVER['XDG_SESSION_ID'] => 127
+$_SERVER['XDG_SESSION_ID'] => 28
 $_SERVER['TERM'] => xterm-256color
 $_SERVER['PATH'] => /root/bin:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 $_SERVER['LC_ADDRESS'] => pt_BR.UTF-8
@@ -772,7 +772,7 @@ $_SERVER['LESSCLOSE'] => /usr/bin/lesspipe %s %s
 $_SERVER['LC_MEASUREMENT'] => pt_BR.UTF-8
 $_SERVER['LC_IDENTIFICATION'] => pt_BR.UTF-8
 $_SERVER['PWD'] => /tmp/sandbox/guia-config-servers
-$_SERVER['SSH_CONNECTION'] => 201.6.229.220 36068 45.55.221.141 22
+$_SERVER['SSH_CONNECTION'] => 177.141.24.19 43102 45.55.221.141 22
 $_SERVER['LC_NUMERIC'] => pt_BR.UTF-8
 $_SERVER['LC_PAPER'] => pt_BR.UTF-8
 $_SERVER['PHP_SELF'] => 
@@ -807,3 +807,65 @@ questions about PHP licensing, please contact license@php.net.
 ● postgresql.service - PostgreSQL RDBMS
    Loaded: loaded (/lib/systemd/system/postgresql.service; enabled; vendor preset: enabled)
    CGroup: /system.slice/postgresql.service
+ [ + ]  acpid
+ [ + ]  apache-htcacheclean
+ [ + ]  apache2
+ [ + ]  apparmor
+ [ + ]  apport
+ [ + ]  atd
+ [ - ]  bootmisc.sh
+ [ - ]  checkfs.sh
+ [ - ]  checkroot-bootclean.sh
+ [ - ]  checkroot.sh
+ [ + ]  console-setup
+ [ + ]  cron
+ [ - ]  cryptdisks
+ [ - ]  cryptdisks-early
+ [ + ]  dbus
+ [ + ]  grub-common
+ [ - ]  hostname.sh
+ [ - ]  hwclock.sh
+ [ + ]  irqbalance
+ [ + ]  iscsid
+ [ + ]  keyboard-setup
+ [ - ]  killprocs
+ [ + ]  kmod
+ [ - ]  lvm2
+ [ + ]  lvm2-lvmetad
+ [ + ]  lvm2-lvmpolld
+ [ + ]  lxcfs
+ [ - ]  lxd
+ [ + ]  mdadm
+ [ - ]  mdadm-waitidle
+ [ - ]  mountall-bootclean.sh
+ [ - ]  mountall.sh
+ [ - ]  mountdevsubfs.sh
+ [ - ]  mountkernfs.sh
+ [ - ]  mountnfs-bootclean.sh
+ [ - ]  mountnfs.sh
+ [ + ]  mysql
+ [ + ]  networking
+ [ + ]  ondemand
+ [ + ]  open-iscsi
+ [ - ]  plymouth
+ [ - ]  plymouth-log
+ [ + ]  postfix
+ [ + ]  postgresql
+ [ + ]  procps
+ [ + ]  rc.local
+ [ + ]  resolvconf
+ [ - ]  rsync
+ [ + ]  rsyslog
+ [ - ]  screen-cleanup
+ [ - ]  sendsigs
+ [ + ]  ssh
+ [ - ]  sysstat
+ [ + ]  udev
+ [ + ]  ufw
+ [ - ]  umountfs
+ [ - ]  umountnfs.sh
+ [ - ]  umountroot
+ [ - ]  unattended-upgrades
+ [ + ]  urandom
+ [ - ]  uuidd
+ [ - ]  x11-common
