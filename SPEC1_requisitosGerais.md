@@ -1,10 +1,14 @@
 SPEC1 (Requisitos Gerais)
 
+* Client
+* VM (Droplet) contendo os servers
+
 ----
 
 Processo de instalação "a partir do zero"...
 
 # Preparo do client #
+
 A interface escolhida para gestão do servidor CidadeAmarela DigitalOcean é feita através de protocolos de comunicação de dados padrão da internet:
 * [HTTPS](https://www.wikidata.org/wiki/Q44484): o portal DigitalOcean.com permite login seguro, e a partir dele todas as operações administrativas são realizadas.
 * [SFTP](https://www.wikidata.org/wiki/Q1126823): transferência "em massa" e gestão de arquivos e pastas.
