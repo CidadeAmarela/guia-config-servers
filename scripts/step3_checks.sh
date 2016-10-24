@@ -12,4 +12,4 @@ echo '--- SERVICES ---'
 service apache2 status    | grep -E "apache2.service|Drop-In"
 service mysql status      | grep mysql.service
 service postgresql status | grep postgresql.service
-
+service --status-all
