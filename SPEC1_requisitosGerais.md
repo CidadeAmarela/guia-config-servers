@@ -3,6 +3,8 @@ SPEC1 (Requisitos Gerais)
 * Client
 * VM (Droplet) contendo os servers
 
+Continua em [SPEC2](SPEC2_instalConfig.md).
+
 ----
 
 Processo de instalação "a partir do zero"...
