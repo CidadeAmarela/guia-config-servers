@@ -31,7 +31,10 @@ Além da obrigação de uso dos sistemas acima, cada administrador deve document
 * https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
 * ...
 
+----
+
 # Preparo da VM #
+Resumo:
  1. No ambiente Digital Ocean, depois do login, navegar para [Droplets](https://cloud.digitalocean.com/droplets). 
  2. Criar um droplet novo ou fazer REBUILD (mesma coisa com a vantagem de não perder IP).
  3. entrar no shell com segurança
@@ -43,6 +46,18 @@ Referências:
   * [How To Create Your First DigitalOcean Droplet Virtual Server](https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet-virtual-server)
 
   * [Initial Server Setup with Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04)
+
+### Droplet
+Escolha do Droplet (imagem): "ubuntu 16 LTS" no Google e na UBUNTU é `16.04.1` , qualquer outra coisa corre o risco de não ser LTS, fique com o LTS.
+
+Como vai ser usado para envio de e-mails, "o Droplet precisa ser rotulado com um fully qualified domain name (example something.com)"([suporte](https://www.digitalocean.com/community/questions/how-do-i-setup-a-ptr-record?answer=26923)) antes de criar seu [*PTR  record* local](https://www.siteground.com/kb/what_is_a_ptr_record_and_how_to_add_one/) no Droplet. Para renomear o Droplet selecione ele no painel de conrole e clique no nome (é um link sem nenhum botão muito óbvio). 
+
+### ssh
+
+Quando no seu client está usando `ssh` para um determinado endereço (IP ou domínio), o ssh cria uma chave... Quando recriamos tudo com "Rebuild Droplet", essa chave perde a validade, e chamar por exemplo `ssh root@11.22.221.141` vai dar erro.
+Pode-se corrigir com `ssh-keygen -f "/home/fulano/.ssh/known_hosts" -R 11.22.221.141`. <br/>NOTA:  trocar "/fulano" pelo seu usuário local de onde está chamando o ssh; e lembrar que a nova  senha da DigitalOcean virá por e-mail (para o coordenador).
+
+------
 
 # Preparo dos domínios #
 
