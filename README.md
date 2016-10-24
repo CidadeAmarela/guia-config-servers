@@ -14,11 +14,11 @@ Para ajudar ou acompanhar demandas, usar [*issues*](https://github.com/CidadeAma
 
 * [Instalação e configuração](SPEC2_instalConfig.md)
 
-* [Backups](#)
+* Backups
 
-* [Testes de restauro dos backups](#)
+* Testes de restauro dos backups
 
-* [Referências de apoio](#)
+* Referências de apoio
 
 -----
 
@@ -30,5 +30,12 @@ sh step1.sh
 # se tudo ok...
 sh step1_check.sh | diff step1_check.dump -
 ```
+------
+
+# Outros elementos 
+* [Termos de uso dos e-mails](https://github.com/CidadeAmarela/guia-config-servers/wiki/Termos-de-uso-dos-emails)
+* ...
+
+------
 
 ![[CC-BY-SA v3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR)](https://upload.wikimedia.org/wikipedia/commons/a/a9/CC-BY-SA.png)
