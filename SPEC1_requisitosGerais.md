@@ -1,7 +1,7 @@
 SPEC1 (Requisitos Gerais)
 
-* Client
-* VM (Droplet) contendo os servers
+* [Preparo do client do operador das instalações](#Preparo do client)
+* [Preparo da VM (Droplet)](#Preparo da VM)  contendo os servers
 
 Continua em [SPEC2](SPEC2_instalConfig.md).
 
@@ -40,18 +40,13 @@ Além da obrigação de uso dos sistemas acima, cada administrador deve document
 ----
 
 # Preparo da VM #
-Resumo:
+Passos básicos:
  1. No ambiente Digital Ocean, depois do login, navegar para [Droplets](https://cloud.digitalocean.com/droplets). 
  2. Criar um droplet novo ou fazer REBUILD (mesma coisa com a vantagem de não perder IP).
  3. entrar no shell com segurança
- 4. Seguir [[steps]]
+ 4. Seguir [*steps* da SPEC2](SPEC2_instalConfig.md)
 
-
-Referências: 
-
-  * [How To Create Your First DigitalOcean Droplet Virtual Server](https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet-virtual-server)
-
-  * [Initial Server Setup with Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04)
+a seguir alguns detalhes para o "rebuild/destroy" do Droplet e uso seguro do ssh.
 
 ### Droplet
 Escolha do Droplet (imagem): "ubuntu 16 LTS" no Google e na UBUNTU é `16.04.1` , qualquer outra coisa corre o risco de não ser LTS, fique com o LTS.
@@ -62,6 +57,11 @@ Como vai ser usado para envio de e-mails, "o Droplet precisa ser rotulado com um
 
 Quando no seu client está usando `ssh` para um determinado endereço (IP ou domínio), o ssh cria uma chave... Quando recriamos tudo com "Rebuild Droplet", essa chave perde a validade, e chamar por exemplo `ssh root@11.22.221.141` vai dar erro.
 O próprio `ssh` avisa com "remove with": pode-se corrigir com `ssh-keygen -f "/home/fulano/.ssh/known_hosts" -R 11.22.221.141`. <br/>NOTA:  trocar "/fulano" pelo seu usuário local de onde está chamando o ssh; e lembrar que a nova  senha da DigitalOcean virá por e-mail (para o coordenador).
+### Referências 
+
+  * [How To Create Your First DigitalOcean Droplet Virtual Server](https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet-virtual-server)
+
+  * [Initial Server Setup with Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04)
 
 ------
 
