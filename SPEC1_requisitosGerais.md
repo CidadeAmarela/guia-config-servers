@@ -61,7 +61,7 @@ Como vai ser usado para envio de e-mails, "o Droplet precisa ser rotulado com um
 ### ssh
 
 Quando no seu client está usando `ssh` para um determinado endereço (IP ou domínio), o ssh cria uma chave... Quando recriamos tudo com "Rebuild Droplet", essa chave perde a validade, e chamar por exemplo `ssh root@11.22.221.141` vai dar erro.
-Pode-se corrigir com `ssh-keygen -f "/home/fulano/.ssh/known_hosts" -R 11.22.221.141`. <br/>NOTA:  trocar "/fulano" pelo seu usuário local de onde está chamando o ssh; e lembrar que a nova  senha da DigitalOcean virá por e-mail (para o coordenador).
+O próprio `ssh` avisa com "remove with": pode-se corrigir com `ssh-keygen -f "/home/fulano/.ssh/known_hosts" -R 11.22.221.141`. <br/>NOTA:  trocar "/fulano" pelo seu usuário local de onde está chamando o ssh; e lembrar que a nova  senha da DigitalOcean virá por e-mail (para o coordenador).
 
 ------
 
