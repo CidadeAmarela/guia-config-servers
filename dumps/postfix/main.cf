@@ -28,31 +28,16 @@ smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
 # information on enabling SSL in the smtp client.
 
 smtpd_relay_restrictions = permit_mynetworks permit_sasl_authenticated defer_unauth_destination
-myhostname = Wordpress3eb483jkns201610195c1530
+myhostname = yellowtown.org
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
-mydestination = $myhostname, Wordpress3eb483jkns201610195c1530, localhost.localdomain, , localhost
+myorigin = /etc/mailname
+mydestination = $myhostname, yellowtown.org, localhost.org, , localhost
 relayhost = 
 mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
 mailbox_size_limit = 0
 recipient_delimiter = +
-inet_interfaces = loopback-only
+inet_interfaces = all
 inet_protocols = all
-
-#adicionado
-virtual_mailbox_domains = proxy:mysql:/etc/postfix/sql/mysql_virtual_domains_maps.cf
-virtual_alias_maps =
-   proxy:mysql:/etc/postfix/sql/mysql_virtual_alias_maps.cf,
-   proxy:mysql:/etc/postfix/sql/mysql_virtual_alias_domain_maps.cf,
-   proxy:mysql:/etc/postfix/sql/mysql_virtual_alias_domain_catchall_maps.cf
-virtual_mailbox_maps =
-   proxy:mysql:/etc/postfix/sql/mysql_virtual_mailbox_maps.cf,
-   proxy:mysql:/etc/postfix/sql/mysql_virtual_alias_domain_mailbox_maps.cf
-
-# Additional for quota support
-virtual_create_maildirsize = yes
-virtual_mailbox_extended = yes
-virtual_mailbox_limit_maps = mysql:/etc/postfix/sql/mysql_virtual_mailbox_limit_maps.cf
-virtual_mailbox_limit_override = yes
-virtual_maildir_limit_message = Sorry, the user's maildir has overdrawn his diskspace quota, please try again later.
-virtual_overquota_bounce = yes
+home_mailbox = Maildir/
+virtual_alias_maps = hash:/etc/postfix/virtual
