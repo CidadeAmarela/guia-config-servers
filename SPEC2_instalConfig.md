@@ -79,6 +79,7 @@ TESTES MINIMOS E AUDITORIA
 * nosso padrão de log-teste http://45.55.221.141/mail.log
 
 ### testes 
+* conferir portas e conexões depois do postfix, gerar relatorio com `netstat -A inet -nlp`
 * `service postfix restart`
 * `echo "Test mail from postfix" | mail -s "Test Postfix2" ppkrauss@gmail.com`
 * `cat /var/log/mail.log | grep yellow`...
