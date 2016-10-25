@@ -68,3 +68,6 @@ O próprio `ssh` avisa com "remove with": pode-se corrigir com `ssh-keygen -f "/
 # Preparo dos domínios #
 
 Cada domínio de [networking/domains](https://cloud.digitalocean.com/networking/domains) ...  trocar o IP do "A"...
+
+# ... Em Estudo ...
+Se usamos ou não [docker-mailserver](https://hub.docker.com/r/tvial/docker-mailserver/) ([git](https://github.com/tomav/docker-mailserver)).
