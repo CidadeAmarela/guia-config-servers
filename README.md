@@ -10,15 +10,15 @@ Para ajudar ou acompanhar demandas, usar [*issues*](https://github.com/CidadeAma
 
 # ESPECIFICAÇÕES #
 
-* [Requisitos gerais](SPEC1_requisitosGerais.md)
+* **SPEC1**: [Requisitos gerais](SPEC1_requisitosGerais.md)
 
-* [Instalação e configuração](SPEC2_instalConfig.md)
+* **SPEC2**: [Instalação e configuração](SPEC2_instalConfig.md)
 
-* Backups
+* **SPEC3**: Backups
 
-* Testes de restauro dos backups
+* **SPEC4**: Testes de restauro dos backups
 
-* Referências de apoio
+* **SPEC5**: Referências normativas e de apoio
 
 -----
 
