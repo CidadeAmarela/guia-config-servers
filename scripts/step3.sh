@@ -13,7 +13,7 @@ chown -R www-data:www-data /var/www
 chmod -R g+rw /var/www
 
 #PHP7.0
-apt-get install php7.0 php7.0-mysql php7.0-mbstring php7.0-imap
+apt-get install php7.0 php7.0-mysql php7.0-mbstring php7.0-imap php7.0-mcrypt
 
 #MySQL
 apt-get install mysql-server
