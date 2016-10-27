@@ -70,4 +70,7 @@ O próprio `ssh` avisa com "remove with": pode-se corrigir com `ssh-keygen -f "/
 Cada domínio de [networking/domains](https://cloud.digitalocean.com/networking/domains) ...  trocar o IP do "A"...
 
 # ... Em Estudo ...
-Se usamos ou não [docker-mailserver](https://hub.docker.com/r/tvial/docker-mailserver/) ([git](https://github.com/tomav/docker-mailserver)).
+Se usamos ou não [docker-mailserver](https://hub.docker.com/r/tvial/docker-mailserver/) ([git](https://github.com/tomav/docker-mailserver) e [test issues](https://github.com/tomav/docker-mailserver/issues/324)).
+
+SSL: [certbot](https://github.com/tomav/docker-mailserver/issues/366) com [let's encrypt](https://letsencrypt.org/)... endossado pela DigitalOcean.
+
