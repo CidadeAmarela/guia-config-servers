@@ -8,7 +8,7 @@ Este guia tem como objetivo:
  * servir de **Termo de Referência** em contratos da CidadeAmarela.
  * garantir a **transparência e a participação** coletiva dos grupos de interesse envolvidos.
 
-Neste `git` são mantidos _documentos públicos oficiais_ da CidadeAmarela,  complementados por _documentos restritos_ (classificados como "restrito" ou "sigiloso").
+Neste `git` são mantidos apenas _documentos públicos oficiais_ da CidadeAmarela. Alguns deles são ou serão complementados por _documentos restritos_ (classificados como "restrito" ou "sigiloso").
 
 ## Organização deste projeto ##
 
