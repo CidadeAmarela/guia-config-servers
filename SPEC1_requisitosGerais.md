@@ -20,8 +20,8 @@ O administrador não deve estabelecer conexões em ambientes impróprios. Consid
 
 * Sistema operacional rodando em *pendrive* (memória USB) seguro e isolado. [Tails](https://tails.boum.org/index.pt.html) ou [Debian Stable 8+ Mínimo e atualizado](https://fixmynix.com/step-by-step-debian-minimal-install-guide), sem nenhum aplicativo adicional instalado, com todas as configurações em inglês, com configurações adicionais de segurança.
 
-   * Copiando imagem por [UNetBootin](https://unetbootin.github.io/) (supondo confiável a instalação em outro Linux por `sudo apt-get install unetbootin`). Talvez por `wget` seguido de cópia seja mais seguro, mas muito chato e não costuma funcionar...(no futuro teremos [debian-installer](https://www.debian.org/devel/debian-installer/)). Exemplo: 1) `wget -c http://ftp.nl.debian.org/debian/dists/jessie/main/installer-amd64/current/images/netboot/mini.iso`; ([achado aqui](https://www.debian.org/distrib/netinst)); 2) run unetbootin; 3) change BIOS; 4) boot.
-
+ * (copiando imagem por [UNetBootin](https://unetbootin.github.io/)...NÃO)  Sugerimos fortemente usar Tails (!), depois de confundir install com uso, alem de esperar horas por um boot, [Tails tem um ótimo passo-a-passo](https://tails.boum.org/install/os/index.pt.html) e tem um boot rápido!
+   
 * Acesso HTTPS: navegador Firefox nativo (versão estável) da distribuição Debian, no terminal lynx ou wget. Firefox com “security settings” ativados ao máximo permitido pelo portal DigitalOcean.
 
 * Acesso SFTP e SSH: via terminal (nativo Debian). 
