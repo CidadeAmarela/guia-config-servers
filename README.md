@@ -1,5 +1,14 @@
 # guia-config-servers
-Convenções e guia a configuração dos serviços (*servers*).
+Convenções e guia a configuração dos serviços online (*servers*) oferecidos pelo Condomínio CidadeAmarela.
+
+Este guia tem como objetivo:
+
+ * registrar **decisões técnicas e de infraestrutura da CidadeAmarela**.
+ * estabelecer instruções e **referencial para a auditoria dos serviços**.
+ * servir de **Termo de Referência** em contratos da CidadeAmarela.
+ * garantir a **transparência e a participação** coletiva dos grupos de interesse envolvidos.
+
+Neste `git` são mantidos _documentos públicos oficiais_ da CidadeAmarela,  complementados por _documentos restritos_ (classificados como "restrito" ou "sigiloso").
 
 ## Organização deste projeto ##
 
