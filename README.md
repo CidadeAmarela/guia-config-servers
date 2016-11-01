@@ -4,9 +4,10 @@ Convenções e guia a configuração dos serviços online (*servers*) oferecidos
 Este guia tem como objetivo:
 
  * registrar **decisões técnicas e de infraestrutura da CidadeAmarela**.
- * estabelecer instruções e **referencial para a auditoria dos serviços**.
+ * estabelecer **instruções e especificações técnicas** para a equipe técnica responsável pela infraestrutura da CidadeAmarela.
  * servir de **Termo de Referência** em contratos da CidadeAmarela.
  * garantir a **transparência e a participação** coletiva dos grupos de interesse envolvidos.
+ * servir de   **referencial para a auditoria** dos serviços e da metodologia empregados, para equipe de autitores externos ou endossadores do termo de referência. 
 
 Neste `git` são mantidos apenas _documentos públicos oficiais_ da CidadeAmarela. Alguns deles são ou serão complementados por _documentos restritos_ (classificados como "restrito" ou "sigiloso").
 
