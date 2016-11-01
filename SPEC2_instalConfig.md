@@ -41,6 +41,9 @@ Responder "Y" ou "yes" para tudo que terminar em "space will be used".
 No final conferir com `sh scripts/step3_checks.sh | diff dumps/step3.txt -` para atestar que foi tudo ok.
 
 # step4 - Postfix
+
+Por hora ver também [wiki/Resumo-do-novo-Step4)](https://github.com/CidadeAmarela/guia-config-servers/wiki/Resumo-do-novo-Step4).
+
 ```sh
 wget https://sourceforge.net/projects/postfixadmin/files/postfixadmin/postfixadmin-3.0/postfixadmin-3.0.tar.gz
 sudo DEBIAN_PRIORITY=low apt-get install postfix postfix-mysql
