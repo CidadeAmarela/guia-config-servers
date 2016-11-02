@@ -38,7 +38,7 @@ Além da obrigação de uso dos sistemas acima, cada administrador deve document
 
  2. Gerar a chave do SSH no *pendrive* de forma segura: [ver esse guia didático do Github](https://help.github.com/categories/ssh/).
 
- 3. ... outros cuidados no preparo do servidor SSH... 
+ 3. ... outros cuidados no preparo do servidor SSH... [ref1](https://www.digitalocean.com/community/tutorials/7-security-measures-to-protect-your-servers), [ref2](https://blog.butecopensource.org/configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca/), [ref3](https://tails.boum.org/doc/about/warning/index.pt.html).
  
 ----
 
