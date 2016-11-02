@@ -33,10 +33,13 @@ O administrador não deve estabelecer conexões em ambientes impróprios. Consid
 Além da obrigação de uso dos sistemas acima, cada administrador deve documentar para o Conselho a máquina, os locais de uso, fornecedor de banda internet, e preencher planilha cidAmarela-HostAdmin com horários e IPs em que esteve conectado. 
 
 # Preparo das autenticações #
-* ...
-* https://www.digitalocean.com/company/blog/introducing-two-factor-authentication/
-* ...
 
+ 1. Login OpenDigtal: usar [two-factor-authentication](https://www.digitalocean.com/company/blog/introducing-two-factor-authentication).
+
+ 2. Gerar a chave do SSH no *pendrive* de forma segura: [ver esse guia didático do Github](https://help.github.com/categories/ssh/).
+
+ 3. ... outros cuidados no preparo do servidor SSH... 
+ 
 ----
 
 # Preparo da VM #
