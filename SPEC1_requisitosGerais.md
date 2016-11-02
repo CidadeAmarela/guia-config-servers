@@ -16,7 +16,7 @@ A interface escolhida para gestão do servidor CidadeAmarela DigitalOcean é fei
 * [SFTP](https://www.wikidata.org/wiki/Q1126823): transferência "em massa" e gestão de arquivos e pastas.
 * [SSH](https://www.wikidata.org/wiki/Q170460): para demais operações de suporte e manutenção.
 
-O administrador não deve estabelecer conexões em ambientes impróprios. Considera-se "ambiente próprio" e obrigatório: 
+O administrador não deve estabelecer conexões em ambientes impróprios. **Considera-se "ambiente próprio" e obrigatório**: 
 
 * Sistema operacional rodando em *pendrive* (memória USB) seguro e isolado. [Tails](https://tails.boum.org/index.pt.html) ou [Debian Stable 8+ Mínimo e atualizado](https://fixmynix.com/step-by-step-debian-minimal-install-guide), sem nenhum aplicativo adicional instalado, com todas as configurações em inglês, com configurações adicionais de segurança.
 
@@ -30,9 +30,13 @@ O administrador não deve estabelecer conexões em ambientes impróprios. Consid
 
 * Acesso físico realizado de máquina e rede confiáveis.
 
-Além da obrigação de uso dos sistemas acima, cada administrador deve documentar para o Conselho a máquina, os locais de uso, fornecedor de banda internet, e preencher planilha cidAmarela-HostAdmin com horários e IPs em que esteve conectado. 
+Além da obrigação de uso dos sistemas acima, cada administrador deve [documentar para o Conselho Gestor dados sobre local e horário de utilização](https://github.com/CidadeAmarela/guia-config-servers/wiki/Planilhas-cidAmarela-HostAdmin-e-cidAmarela-RHponto).
+
+NOTA: o procedimento completo, acima descrito, foi apelidado de "pendrive seguro".
 
 # Preparo das autenticações #
+
+Passos abaixo já sendo realizados via *pendrive seguro*.
 
  1. Login OpenDigtal: usar [two-factor-authentication](https://www.digitalocean.com/company/blog/introducing-two-factor-authentication).
 
