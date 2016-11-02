@@ -38,11 +38,17 @@ NOTA: o procedimento completo, acima descrito, foi apelidado de "pendrive seguro
 
 Passos abaixo já sendo realizados via *pendrive seguro*.
 
- 1. Login OpenDigtal: usar [two-factor-authentication](https://www.digitalocean.com/company/blog/introducing-two-factor-authentication).
+ 1. Login Google (ou recurso similar para comunicação): como o contato da DigitalOcean é realizado também via e-mail, e o contato entre técnicos CidadeAmarela via *chat*, dados o risco e responsabilidade envolvidos, requere-se também os seguintes compromissos:
+    
+  * Nunca circular senha ou chave CidadeAmarela (qualquer) por e-mail ou por chat.
+   
+  * No Google (ou similar) fazer uso de [autenticação por dois fatores](https://www.wikidata.org/wiki/Q17086335), tendo como segundo fator, de preferência, o [SMS no celular](https://www.wikidata.org/wiki/Q43024). Ver [ajuda google](https://myaccount.google.com/security/signinoptions/two-step-verification/enroll-welcome).
 
- 2. Gerar a chave do SSH no *pendrive* de forma segura: [ver esse guia didático do Github](https://help.github.com/categories/ssh/).
+ 2. Login OpenDigtal: usar [two-factor-authentication](https://www.digitalocean.com/company/blog/introducing-two-factor-authentication).
 
- 3. ... outros cuidados no preparo do servidor SSH... [ref1](https://www.digitalocean.com/community/tutorials/7-security-measures-to-protect-your-servers), [ref2](https://blog.butecopensource.org/configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca/), [ref3](https://tails.boum.org/doc/about/warning/index.pt.html).
+ 3. Gerar a chave do SSH no *pendrive* de forma segura: [ver esse guia didático do Github](https://help.github.com/categories/ssh/).
+
+ 4. ... outros cuidados no preparo do servidor SSH... [ref1](https://www.digitalocean.com/community/tutorials/7-security-measures-to-protect-your-servers), [ref2](https://blog.butecopensource.org/configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca/), [ref3](https://tails.boum.org/doc/about/warning/index.pt.html).
  
 ----
 
