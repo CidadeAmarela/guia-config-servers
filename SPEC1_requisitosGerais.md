@@ -46,7 +46,7 @@ Passos abaixo já sendo realizados via *pendrive seguro*.
   
   * Em todos os ambientes com login pessoal (Github, comunicadores Google, site DigitalOcean) através dos quais operações CidadadeAmarela sejam realizadas, fazer uso de senhas fortes e trocá-las pelo menos uma vez por ano.
   
-  * Comunicar Conselho Gestor sobre qualquer outro uso das senhas, em ferramentas de integração como [Slack](http://slack.com) ou que armazenem o seu login em outro meio.
+  * Solicitar permissão ao Conselho Gestor sobre qualquer outro uso das senhas, em ferramentas de integração como [Slack](http://slack.com) ou que armazenem o seu login em outro meio.
 
  2. Login OpenDigtal: usar [two-factor-authentication](https://www.digitalocean.com/company/blog/introducing-two-factor-authentication).
 
