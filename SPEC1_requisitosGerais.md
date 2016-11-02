@@ -60,6 +60,7 @@ Como vai ser usado para envio de e-mails, "o Droplet precisa ser rotulado com um
 
 Quando no seu client está usando `ssh` para um determinado endereço (IP ou domínio), o ssh cria uma chave... Quando recriamos tudo com "Rebuild Droplet", essa chave perde a validade, e chamar por exemplo `ssh root@11.22.221.141` vai dar erro.
 O próprio `ssh` avisa com "remove with": pode-se corrigir com `ssh-keygen -f "/home/fulano/.ssh/known_hosts" -R 11.22.221.141`. <br/>NOTA:  trocar "/fulano" pelo seu usuário local de onde está chamando o ssh; e lembrar que a nova  senha da DigitalOcean virá por e-mail (para o coordenador).
+
 ### Referências 
 
   * [How To Create Your First DigitalOcean Droplet Virtual Server](https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet-virtual-server)
@@ -72,8 +73,7 @@ O próprio `ssh` avisa com "remove with": pode-se corrigir com `ssh-keygen -f "/
 
 Cada domínio de [networking/domains](https://cloud.digitalocean.com/networking/domains) ...  trocar o IP do "A"...
 
-# ... Em Estudo ...
-Se usamos ou não [docker-mailserver](https://hub.docker.com/r/tvial/docker-mailserver/) ([git](https://github.com/tomav/docker-mailserver) e [test issues](https://github.com/tomav/docker-mailserver/issues/324)).
+# ... Testes Estudo ...
+... além dos já citados ... [test issues for email](https://github.com/tomav/docker-mailserver/issues/324))...
 
-SSL: [certbot](https://github.com/tomav/docker-mailserver/issues/366) com [let's encrypt](https://letsencrypt.org/)... endossado pela DigitalOcean.
 
