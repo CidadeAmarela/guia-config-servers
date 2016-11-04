@@ -50,7 +50,7 @@ Passos abaixo já sendo realizados via *pendrive seguro*.
 
  2. Login OpenDigtal: usar [two-factor-authentication](https://www.digitalocean.com/company/blog/introducing-two-factor-authentication).
 
- 3. Gerar a chave do SSH no *pendrive* de forma segura: [ver esse guia didático do Github](https://help.github.com/categories/ssh/) ou o [nosso passo-a-passo aqui na Wiki](https://github.com/CidadeAmarela/guia-config-servers/wiki/Criando-uma-chave-para-o-SSH)
+ 3. Gerar a chave do SSH no *pendrive* de forma segura: ver [nosso **passo-a-passo** aqui na Wiki](https://github.com/CidadeAmarela/guia-config-servers/wiki/Criando-uma-chave-para-o-SSH)
 
  4. ... outros cuidados no preparo do servidor SSH... [ref1](https://www.digitalocean.com/community/tutorials/7-security-measures-to-protect-your-servers), [ref2](https://blog.butecopensource.org/configuracoes-do-openssh-que-podem-fazer-toda-a-diferenca/), [ref3](https://tails.boum.org/doc/about/warning/index.pt.html).
  
