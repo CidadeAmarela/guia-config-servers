@@ -28,6 +28,7 @@ Additional .ini files parsed => /etc/php/7.0/cli/conf.d/10-mysqlnd.ini,
 /etc/php/7.0/cli/conf.d/20-imap.ini,
 /etc/php/7.0/cli/conf.d/20-json.ini,
 /etc/php/7.0/cli/conf.d/20-mbstring.ini,
+/etc/php/7.0/cli/conf.d/20-mcrypt.ini,
 /etc/php/7.0/cli/conf.d/20-mysqli.ini,
 /etc/php/7.0/cli/conf.d/20-pdo_mysql.ini,
 /etc/php/7.0/cli/conf.d/20-phar.ini,
@@ -55,7 +56,7 @@ DTrace Support => enabled
 
 Registered PHP Streams => https, ftps, compress.zlib, php, file, glob, data, http, ftp, phar
 Registered Stream Socket Transports => tcp, udp, unix, udg, ssl, tls, tlsv1.0, tlsv1.1, tlsv1.2
-Registered Stream Filters => zlib.*, string.rot13, string.toupper, string.tolower, string.strip_tags, convert.*, consumed, dechunk, convert.iconv.*
+Registered Stream Filters => zlib.*, string.rot13, string.toupper, string.tolower, string.strip_tags, convert.*, consumed, dechunk, convert.iconv.*, mcrypt.*, mdecrypt.*
 
 This program makes use of the Zend Scripting Language Engine:
 Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
@@ -282,6 +283,19 @@ mbstring.internal_encoding => no value => no value
 mbstring.language => neutral => neutral
 mbstring.strict_detection => Off => Off
 mbstring.substitute_character => no value => no value
+
+mcrypt
+
+mcrypt support => enabled
+mcrypt_filter support => enabled
+Version => 2.5.8
+Api No => 20021217
+Supported ciphers => cast-128 gost rijndael-128 twofish arcfour cast-256 loki97 rijndael-192 saferplus wake blowfish-compat des rijndael-256 serpent xtea blowfish enigma rc2 tripledes 
+Supported modes => cbc cfb ctr ecb ncfb nofb ofb stream 
+
+Directive => Local Value => Master Value
+mcrypt.algorithms_dir => no value => no value
+mcrypt.modes_dir => no value => no value
 
 mysqli
 
@@ -712,19 +726,19 @@ Environment
 
 Variable => Value
 LESSOPEN => | /usr/bin/lesspipe %s
-MAIL => /root/Maildir
-SSH_CLIENT => 177.141.24.19 43102 22
+MAIL => /var/mail/root
+SSH_CLIENT => 177.141.24.19 58252 22
 USER => root
 LC_TIME => pt_BR.UTF-8
 SHLVL => 1
 HOME => /root
-OLDPWD => /root
-SSH_TTY => /dev/pts/3
+OLDPWD => /tmp/sandbox
+SSH_TTY => /dev/pts/0
 LC_MONETARY => pt_BR.UTF-8
 LC_CTYPE => pt_BR.UTF-8
 LOGNAME => root
 _ => /bin/sh
-XDG_SESSION_ID => 28
+XDG_SESSION_ID => 819
 TERM => xterm-256color
 PATH => /root/bin:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 LC_ADDRESS => pt_BR.UTF-8
@@ -738,7 +752,7 @@ LESSCLOSE => /usr/bin/lesspipe %s %s
 LC_MEASUREMENT => pt_BR.UTF-8
 LC_IDENTIFICATION => pt_BR.UTF-8
 PWD => /tmp/sandbox/guia-config-servers
-SSH_CONNECTION => 177.141.24.19 43102 45.55.221.141 22
+SSH_CONNECTION => 177.141.24.19 58252 45.55.221.141 22
 LC_NUMERIC => pt_BR.UTF-8
 LC_PAPER => pt_BR.UTF-8
 
@@ -746,19 +760,19 @@ PHP Variables
 
 Variable => Value
 $_SERVER['LESSOPEN'] => | /usr/bin/lesspipe %s
-$_SERVER['MAIL'] => /root/Maildir
-$_SERVER['SSH_CLIENT'] => 177.141.24.19 43102 22
+$_SERVER['MAIL'] => /var/mail/root
+$_SERVER['SSH_CLIENT'] => 177.141.24.19 58252 22
 $_SERVER['USER'] => root
 $_SERVER['LC_TIME'] => pt_BR.UTF-8
 $_SERVER['SHLVL'] => 1
 $_SERVER['HOME'] => /root
-$_SERVER['OLDPWD'] => /root
-$_SERVER['SSH_TTY'] => /dev/pts/3
+$_SERVER['OLDPWD'] => /tmp/sandbox
+$_SERVER['SSH_TTY'] => /dev/pts/0
 $_SERVER['LC_MONETARY'] => pt_BR.UTF-8
 $_SERVER['LC_CTYPE'] => pt_BR.UTF-8
 $_SERVER['LOGNAME'] => root
 $_SERVER['_'] => /bin/sh
-$_SERVER['XDG_SESSION_ID'] => 28
+$_SERVER['XDG_SESSION_ID'] => 819
 $_SERVER['TERM'] => xterm-256color
 $_SERVER['PATH'] => /root/bin:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 $_SERVER['LC_ADDRESS'] => pt_BR.UTF-8
@@ -772,7 +786,7 @@ $_SERVER['LESSCLOSE'] => /usr/bin/lesspipe %s %s
 $_SERVER['LC_MEASUREMENT'] => pt_BR.UTF-8
 $_SERVER['LC_IDENTIFICATION'] => pt_BR.UTF-8
 $_SERVER['PWD'] => /tmp/sandbox/guia-config-servers
-$_SERVER['SSH_CONNECTION'] => 177.141.24.19 43102 45.55.221.141 22
+$_SERVER['SSH_CONNECTION'] => 177.141.24.19 58252 45.55.221.141 22
 $_SERVER['LC_NUMERIC'] => pt_BR.UTF-8
 $_SERVER['LC_PAPER'] => pt_BR.UTF-8
 $_SERVER['PHP_SELF'] => 
@@ -822,6 +836,7 @@ questions about PHP licensing, please contact license@php.net.
  [ - ]  cryptdisks
  [ - ]  cryptdisks-early
  [ + ]  dbus
+ [ + ]  dovecot
  [ + ]  grub-common
  [ - ]  hostname.sh
  [ - ]  hwclock.sh
