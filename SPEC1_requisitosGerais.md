@@ -40,13 +40,13 @@ Passos abaixo já sendo realizados via *pendrive seguro*.
 
  1. Login Google (ou recurso similar para comunicação): como o contato da DigitalOcean é realizado também via e-mail, e o contato entre técnicos CidadeAmarela via *chat*, dados o risco e responsabilidade envolvidos, requere-se também os seguintes compromissos:
  
-  * Nunca circular senha ou chave CidadeAmarela (qualquer) por e-mail ou por chat.
-  
-  * No Google (ou similar) fazer uso de [autenticação por dois fatores](https://www.wikidata.org/wiki/Q17086335), tendo como segundo fator, de preferência, o [SMS no celular](https://www.wikidata.org/wiki/Q43024). Ver [ajuda google](https://myaccount.google.com/security/signinoptions/two-step-verification/enroll-welcome).
-  
-  * Em todos os ambientes com login pessoal (Github, comunicadores Google, site DigitalOcean) através dos quais operações CidadadeAmarela sejam realizadas, fazer uso de senhas fortes e trocá-las pelo menos uma vez por ano.
-  
-  * Solicitar permissão ao Conselho Gestor sobre qualquer outro uso das senhas, em ferramentas de integração como [Slack](http://slack.com) ou que armazenem o seu login em outro meio.
+   *  Nunca circular senha ou chave CidadeAmarela (qualquer) por e-mail ou por chat.
+   
+   *  No Google (ou similar) fazer uso de [autenticação por dois fatores](https://www.wikidata.org/wiki/Q17086335), tendo como segundo fator, de preferência, o [SMS no celular](https://www.wikidata.org/wiki/Q43024). Ver [ajuda google](https://myaccount.google.com/security/signinoptions/two-step-verification/enroll-welcome).
+   
+   *  Em todos os ambientes com login pessoal (Github, comunicadores Google, site DigitalOcean) através dos quais operações CidadadeAmarela sejam realizadas, fazer uso de senhas fortes e trocá-las pelo menos uma vez por ano.
+   
+   *  Solicitar permissão ao Conselho Gestor sobre qualquer outro uso das senhas, em ferramentas de integração como [Slack](http://slack.com) ou que armazenem o seu login em outro meio.
 
  2. Login OpenDigtal: usar [two-factor-authentication](https://www.digitalocean.com/company/blog/introducing-two-factor-authentication).
 
