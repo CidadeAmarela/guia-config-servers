@@ -40,13 +40,13 @@ Passos abaixo já sendo realizados via *pendrive seguro*.
 
  1. Login Google (ou recurso similar para comunicação): como o contato da DigitalOcean é realizado também via e-mail, e o contato entre técnicos CidadeAmarela via *chat*, dados o risco e responsabilidade envolvidos, requere-se também os seguintes compromissos:
  
-   *  Nunca circular senha ou chave CidadeAmarela (qualquer) por e-mail ou por chat.
-   
-   *  No Google (ou similar) fazer uso de [autenticação por dois fatores](https://www.wikidata.org/wiki/Q17086335), tendo como segundo fator, de preferência, o [SMS no celular](https://www.wikidata.org/wiki/Q43024). Ver [ajuda google](https://myaccount.google.com/security/signinoptions/two-step-verification/enroll-welcome).
-   
-   *  Em todos os ambientes com login pessoal (Github, comunicadores Google, site DigitalOcean) através dos quais operações CidadadeAmarela sejam realizadas, fazer uso de senhas fortes e trocá-las pelo menos uma vez por ano.
-   
-   *  Solicitar permissão ao Conselho Gestor sobre qualquer outro uso das senhas, em ferramentas de integração como [Slack](http://slack.com) ou que armazenem o seu login em outro meio.
+  *  Nunca circular senha ou chave CidadeAmarela (qualquer) por e-mail ou por chat.
+
+  *  No Google (ou similar) fazer uso de [autenticação por dois fatores](https://www.wikidata.org/wiki/Q17086335), tendo como segundo fator, de preferência, o [SMS no celular](https://www.wikidata.org/wiki/Q43024). Ver [ajuda google](https://myaccount.google.com/security/signinoptions/two-step-verification/enroll-welcome).
+
+  *  Em todos os ambientes com login pessoal (Github, comunicadores Google, site DigitalOcean) através dos quais operações CidadadeAmarela sejam realizadas, fazer uso de senhas fortes e trocá-las pelo menos uma vez por ano.
+
+  *  Solicitar permissão ao Conselho Gestor sobre qualquer outro uso das senhas, em ferramentas de integração como [Slack](http://slack.com) ou que armazenem o seu login em outro meio.
 
  2. Login OpenDigtal: usar [two-factor-authentication](https://www.digitalocean.com/company/blog/introducing-two-factor-authentication).
 
@@ -73,7 +73,7 @@ Como vai ser usado para envio de e-mails, "o Droplet precisa ser rotulado com um
 ### ssh
 
 Quando no seu client está usando `ssh` para um determinado endereço (IP ou domínio), o ssh cria uma chave... Quando recriamos tudo com "Rebuild Droplet", essa chave perde a validade, e chamar por exemplo `ssh root@11.22.221.141` vai dar erro.
-O próprio `ssh` avisa com "remove with": pode-se corrigir com `ssh-keygen -f "/home/fulano/.ssh/known_hosts" -R 11.22.221.141`. <br/>NOTA:  trocar "/fulano" pelo seu usuário local de onde está chamando o ssh; e lembrar que a nova  senha da DigitalOcean virá por e-mail (para o coordenador).
+O próprio `ssh` avisa com "remove with": pode-se corrigir com `ssh-keygen -f "/home/fulano/.ssh/known_hosts" -R 11.22.221.141`. <br/>NOTA: trocar "/fulano" pelo seu usuário local de onde está chamando o ssh; e lembrar que a nova  senha da DigitalOcean virá por e-mail (para o coordenador).
 
 ### Referências 
 
