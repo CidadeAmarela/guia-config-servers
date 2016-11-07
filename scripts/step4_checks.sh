@@ -18,7 +18,7 @@ cat /etc/postfix/mysql-virtual-email2email.cf
 cat /etc/postfix/master.cf
 cat /etc/postfix/main.cf
 
-echo '-- -- -- /etc/postfix/*.cf'
+echo '-- -- -- /etc/dovecot/*.cf'
 cat /etc/dovecot/dovecot.conf
 cat /etc/dovecot/conf.d/10-mail.conf
 cat /etc/dovecot/conf.d/10-master.conf
