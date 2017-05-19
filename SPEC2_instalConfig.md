@@ -36,7 +36,8 @@ pode pular se for só teste sem segurança.
 é o mais demorado ... reservar pelo menos 10 minutos e cuidado com o ssh que pode perder conexão.
 
 * https://github.com/CidadeAmarela/guia-config-servers/blob/master/scripts/step3.sh
-Responder "Y" ou "yes" para tudo que terminar em "space will be used".
+
+Responder "Y" ou "yes" para tudo que terminar em "space will be used". Responder senha do MySQL duas vezes.
 
 No final conferir com `sh scripts/step3_checks.sh | diff dumps/step3.txt -` para atestar que foi tudo ok.
 
