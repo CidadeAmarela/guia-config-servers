@@ -3,23 +3,23 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-apt-get update
+apt update
 
 #Apache2
-apt-get install apache2 libapache2-mod-php7.0
+apt install apache2 libapache2-mod-php7.1
 
 #Fornecer permissão /www
 chown -R www-data:www-data /var/www
 chmod -R g+rw /var/www
 
-#PHP7.0
-apt-get install php7.0 php7.0-mysql php7.0-mbstring php7.0-imap php7.0-mcrypt
+#PHP7.1
+apt install php7.1 php7.1-mysql php7.1-mbstring php7.1-imap php7.1-mcrypt
 
 #MySQL
-apt-get install mysql-server
+apt install mysql-server
 
 #postgreSQL
-apt-get install postgresql-9.5 postgresql-contrib-9.5 postgis-2.2
+apt install postgresql-9.6 postgresql-contrib-9.6 postgis-2.3
 
 echo '.. próximo passo PostFix'
 
