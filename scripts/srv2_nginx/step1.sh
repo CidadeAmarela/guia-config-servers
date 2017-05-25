@@ -15,6 +15,9 @@ update-locale LANG=pt_BR.UTF-8
 dpkg-reconfigure locales
 export LC_ALL=pt_BR.UTF-8
 
+apt update
+apt upgrade
+
 echo '--- NOTA: se for DigitalOcean, rodar agora o sh de atualizacao. ---'
 
 echo '--- AGORA SAIR (exit) e depois check com dump ---'
