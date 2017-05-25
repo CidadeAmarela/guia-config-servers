@@ -6,7 +6,7 @@ fi
 apt update
 
 #Apache2
-apt install apache2 libapache2-mod-php7.0
+apt install nginx
 
 #Fornecer permissão /www
 chown -R www-data:www-data /var/www
