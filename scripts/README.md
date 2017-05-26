@@ -17,7 +17,7 @@ Ver [srv1_apache](srv1_apache).
 
 ## Nginx ##
 
-Ver [srv2_anginx](srv2_anginx), a maior parte do script é mantida como cópia do `srv1_apache`.
+Ver [srv2_nginx](srv2_nginx), a maior parte do script é mantida como cópia do `srv1_apache`.
 
 ## Psotfix ##
 
