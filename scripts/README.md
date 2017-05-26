@@ -17,8 +17,9 @@ Ver [srv1_apache](srv1_apache).
 
 ## Nginx ##
 
-Ver [srv2_nginx](srv2_nginx), a maior parte do script é mantida como cópia do `srv1_apache`.
+Ver [srv2_nginx](srv2_nginx), a maior parte do script é mantida como cópia do `srv1_apache`. 
+Após rodar scripts, seguir a  partir do [Step2 deste tutorial Digitalocean](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04#step-2-adjust-the-firewall).
 
-## Psotfix ##
+## Postfix ##
 
 Ver [srv3_postfix](srv3_postfix).
