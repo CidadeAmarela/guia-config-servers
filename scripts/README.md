@@ -35,9 +35,7 @@ Após rodar scripts, seguir a  partir do [Step2 deste tutorial Digitalocean](htt
  apt update
  apt install python-certbot-nginx 
 ```
-... deu pau, ver [esta discussão de ajuda](https://community.letsencrypt.org/t/certbot-on-nginx-not-working-no-plug-and-play-solution/33895/4).
-
-
+... deu problema de certificação, ver [esta discussão de ajuda](https://community.letsencrypt.org/t/certbot-on-nginx-not-working-no-plug-and-play-solution/33895/4).  Talvez alguma dica em [neste tutorial](https://www.bjornjohansen.no/optimizing-https-nginx).
 
 
 ## Postfix ##
